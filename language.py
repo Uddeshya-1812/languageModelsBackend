@@ -1,8 +1,8 @@
 import re
 import pickle
-model = pickle.load(open('model.pkl', 'rb'))
-cv = pickle.load(open('cv.pkl', 'rb'))
-le = pickle.load(open('le.pkl', 'rb'))
+model = pickle.load(open('./model.pkl', 'rb'))
+cv = pickle.load(open('./cv.pkl', 'rb'))
+le = pickle.load(open('./le.pkl', 'rb'))
 
 def preprocessText(text):
     text = re.sub(r'[!@#$(),n"%^*?:;~`0-9]', ' ', text)
